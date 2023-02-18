@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulación del DOM básica - Curso Práctico de Javascript</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
- <body>
 
-    <h1>Manipulación del DOM básica</h1>
+<body>
+    <main>
 
-    <input type="text" id="calculo1" placeholder="Escribe algo aqui" >
-    <input type="text" id="calculo2" placeholder="Escribe algo aqui">
-    <button id="bntCalcular" onclick="btnCalcular() ">Calcular</button>
+        <h1>Calculadora <br> -Manipulación básica del DOM-</h1>
 
-    <p id="result"></p>
+        <section class="main--user_options">
 
+            <input type="text" id="calculo1" placeholder="Escribe algo aqui">
+            <input type="text" id="calculo2" placeholder="Escribe algo aqui">
+
+            <button id="bntCalcular" onclick="btnCalcular() ">Calcular</button>
+
+            <select name="options" id="options" onchange="cambioSelect()">
+                <option value="suma">Suma</option>
+                <option value="resta" selected>Resta</option>
+                <option value="multiplicación">Multiplicación</option>
+                <option value="division">Division</option>
+            </select>
+        </section>
+
+        <div id="result">
+            
+        </div>
+    </main>
     <script src="./script.js"></script>
 </body>
-</html> 
+
+</html>

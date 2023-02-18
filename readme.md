@@ -7,6 +7,6 @@
 3. Presentar las ideas lokas
 
 1.1 
-- El css sera suave con curvas y adaptable.}
+- El css sera suave con curvas y adaptable.
 - Colores claros 
 - Letra fuerte
